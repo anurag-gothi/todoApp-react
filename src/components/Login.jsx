@@ -31,6 +31,7 @@ class Login extends Component {
     }
   };
   responseGoogle = response =>{
+    console.log(response)
     if(response.profileObj){
       const user= {
         email:response.profileObj.email,
