@@ -5,12 +5,12 @@ import TodoApp from "./components/TodoApp";
 import NavBar from "./components/NavBar";
 import Register from './components/Register'
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <NavBar />
       <Switch>
-        <Route exact path="/login" component={Login} />
+  <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />
 
         <Route exact path="/todos" component={TodoApp} />
