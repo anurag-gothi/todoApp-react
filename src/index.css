@@ -48,6 +48,17 @@ code {
   color: white;
   border: none;
 }
+@media only screen and (max-width: 600px) {
+  .btn {
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    border: none;
+  }
+}
 
 .btn-edit {
   background: #8e44ad;
