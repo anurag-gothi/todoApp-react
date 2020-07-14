@@ -12,7 +12,9 @@ class TodoApp extends Component {
     currentTodoId: null,
   };
   componentDidMount() {
-    this.props.getAllTodos(this.props.user.email)
+    if(this.props.user!==null){
+      this.props.getAllTodos(this.props.user.email)
+    }
   }
   switchOnEdit = (todoId) => {
     console.log("Switched on ");
