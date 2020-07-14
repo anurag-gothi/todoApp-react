@@ -30,7 +30,6 @@ export const logIn = user => async dispatch => {
   const chk = data.filter(el => {
     return el.email === user.email && el.password === user.password
   });
-  console.log(chk)
   if (chk.length === 0) {
     console.log('invalid')
     dispatch({
