@@ -17,6 +17,9 @@ class Login extends Component {
     this.setState({ [e.target.name]: e.target.value });
     this.setState({error:""})
   };
+  componentDidMount(){
+        document.querySelector("#root > div > form > button").style.opactiy="1"
+  }
 
   handleSubmit = async e => {
     e.preventDefault();
@@ -31,7 +34,9 @@ class Login extends Component {
     }
   };
   responseGoogle = response =>{
-    console.log(response)
+    if(response.error){
+      console.log(response)
+    }
     if(response.profileObj){
       const user= {
         email:response.profileObj.email,

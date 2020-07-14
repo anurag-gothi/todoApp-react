@@ -13,7 +13,6 @@ const userReducer = (state = initialState, action) => {
   const { type, payload } = action;
   switch (type) {
     case GET_TODOS:
-      console.log(2)
       return { ...state, todos: payload };
     case CREATE_TODO:
       return { ...state, todos: [...state.todos, payload] };

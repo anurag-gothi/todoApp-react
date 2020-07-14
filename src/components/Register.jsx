@@ -29,6 +29,9 @@ class Register extends Component {
     }
   };
   responseGoogle = response =>{
+    if(response.error){
+      console.log(response)
+    }
     if(response.profileObj){
       const user= {
         email:response.profileObj.email,

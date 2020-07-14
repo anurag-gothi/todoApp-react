@@ -12,7 +12,6 @@ const button = {
 };
 
 const NavBar = ({ user, logOut, history, ...restProps }) => {
-  console.log(restProps);
   const handleLogout = () => {
     logOut();
     history.push("/login");

@@ -1,5 +1,5 @@
 import React from "react";
-import TodoListItem from "../components/TodoListItem";
+import TodoListItem from "./TodoListItem";
 import { connect } from "react-redux";
 
 const todoListStyles = {

@@ -12,7 +12,6 @@ class TodoApp extends Component {
     currentTodoId: null,
   };
   componentDidMount() {
-    console.log(this.props.user)
     if(this.props.user!==null){
       this.props.getAllTodos(this.props.user.email)
     }
