@@ -1,4 +1,4 @@
-import { LOG_IN, LOG_OUT, REGISTER } from "../actionTypes";
+import { LOG_IN, LOG_OUT, REGISTER, GOOGLE } from "../actionTypes";
 
 const initialState = {
   user: null,
@@ -14,6 +14,8 @@ const userReducer = (state = initialState, action) => {
       return { ...state, user: payload };
     case LOG_OUT:
       return { ...state, user: null };
+    case GOOGLE:
+      return {...state,user:payload}
     case 'INVALID':
       return{...state,invalid:'invalid credentials'}
     default:
